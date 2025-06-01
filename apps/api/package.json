@@ -6,6 +6,11 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "store": "*"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.2",
+    "express": "^5.1.0"
   }
 }
