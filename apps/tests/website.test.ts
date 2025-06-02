@@ -10,7 +10,7 @@ describe("Website gets created", () => {
             await axios.post(`${BASE_URL}/website`, {
                 
             });
-            expect(false, "Website created when it shouldnt");
+            expect(false, "Website created when it shouldnot");
         } catch(e) {
 
         }
