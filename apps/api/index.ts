@@ -24,6 +24,7 @@ app.post("/website", async (req, res) => {
 
 app.get("/status/:websiteId", (req, res) => {
     const websiteId = req.params.websiteId;
+    
 
 })
 
