@@ -82,3 +82,8 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
 - [Configuration Options](https://turborepo.com/docs/reference/configuration)
 - [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+ ## Community
+
+- [Discord](https://turborepo.com/discord)
+- [Twitter](https://twitter.com/turborepo)
+- [GitHub Discussions](https://github.com/turborepo/turborepo/discussions)
