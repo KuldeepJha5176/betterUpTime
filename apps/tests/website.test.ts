@@ -25,5 +25,15 @@ describe("Website gets created", () => {
 
     })
 
-    it("")
+    it("Website is updated if url is present", async () => {
+        const response = await axios.post(`${BASE_URL}/website`, {
+            url: "https://google.com"
+        });
+        const response2 = await axios.post(`${BASE_URL}/website`, {
+            url: "https://google.com",
+            id: response.data.id
+        });
+        expect(response2.data.id).toBe(response.data.id);
+
+    })
 })
