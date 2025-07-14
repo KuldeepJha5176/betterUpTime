@@ -36,4 +36,12 @@ describe("Website gets created", () => {
         expect(response2.data.id).toBe(response.data.id);
 
     })
+    it("Website is deleted if url is present", async () => {
+        const response = await axios.post(`${BASE_URL}/website`, {
+            url: "https://google.com"
+        });
+        const response2 = await axios.delete(`${BASE_URL}/website/${response.data.id}`);
+        expect(response2.data.id).toBe(response.data.id);
+
+    })
 })
