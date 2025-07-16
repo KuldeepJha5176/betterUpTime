@@ -44,5 +44,13 @@ describe("Website gets created", () => {
         expect(response2.data.id).toBe(response.data.id);
 
     })
-    it
+    it("Website is not deleted if url is not present", async () => {
+        try {
+            await axios.delete(`${BASE_URL}/website/1`);
+            expect(false, "Website deleted when it shouldnot");
+        } catch(e) {
+
+        }
+
+    })
 })
