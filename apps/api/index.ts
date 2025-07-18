@@ -37,4 +37,13 @@ app.get("/status/:websiteId", (req, res) => {
   }
 });
 
+app.get("/websites", (req, res) => {
+  const websites = await prismaClient.website.findMany({
+    where: {
+      status: "active",
+    },
+  });
+  res.json(websites);
+});
+
 app.listen(process.env.PORT || 3000);
